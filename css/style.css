@@ -1,0 +1,558 @@
+@charset "utf-8";
+/*==========================
+Author: Amir Nabee;
+Date: 11/11/2015;
+Project Name: Singolo;
+
+
+===========================*/
+
+/*------------------ icon -----------------------*/
+@font-face {
+	font-family: "Flaticon";
+	src: url("icon/flaticon.eot");
+	src: url("icon/flaticon.eot#iefix") format("embedded-opentype"),
+	url("icon/flaticon.woff") format("woff"),
+	url("icon/flaticon.ttf") format("truetype"),
+	url("icon/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+/*margin-left: 20px;*/
+}.flaticon-bulb24:before {
+	content: "\e000";
+}
+.flaticon-call60:before {
+	content: "\e001";
+}
+.flaticon-dark4:before {
+	content: "\e002";
+}
+.flaticon-drawing4:before {
+	content: "\e003";
+}
+.flaticon-facebook30:before {
+	content: "\e004";
+}
+.flaticon-facebook55:before {
+	content: "\e005";
+}
+.flaticon-google116:before {
+	content: "\e006";
+}
+.flaticon-linkedin11:before {
+	content: "\e007";
+}
+.flaticon-love149:before {
+	content: "\e008";
+}
+.flaticon-smartphone86:before {
+	content: "\e009";
+}
+.flaticon-speech84:before {
+	content: "\e00a";
+}
+.flaticon-star-shape3:before {
+	content: "\e00b";
+}
+.flaticon-twitter13:before {
+	content: "\e00c";
+}
+
+/*------------------ Page font -------------------------*/
+/* Webfont: Lato-Black */
+@font-face {
+    font-family: 'latoblack';
+    src: url('../font/lato-black-webfont.eot');
+    src: url('../font/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/lato-black-webfont.woff2') format('woff2'),
+         url('../font/lato-black-webfont.woff') format('woff'),
+         url('../font/lato-black-webfont.ttf') format('truetype'),
+         url('../font/lato-black-webfont.svg#latoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Webfont: Lato-Light */
+@font-face {
+    font-family: 'latolight';
+    src: url('../font/lato-light-webfont.eot');
+    src: url('../font/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/lato-light-webfont.woff2') format('woff2'),
+         url('../font/lato-light-webfont.woff') format('woff'),
+         url('../font/lato-light-webfont.ttf') format('truetype'),
+         url('../font/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Webfont: Lato-Bold */
+@font-face {
+    font-family: 'latobold';
+    src: url('../font/lato-bold-webfont.eot');
+    src: url('../font/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/lato-bold-webfont.woff2') format('woff2'),
+         url('../font/lato-bold-webfont.woff') format('woff'),
+         url('../font/lato-bold-webfont.ttf') format('truetype'),
+         url('../font/lato-bold-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Webfont: Lato-Regular */
+@font-face {
+    font-family: 'latoregular';
+    src: url('../font/lato-regular-webfont.eot');
+    src: url('../font/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/lato-regular-webfont.woff2') format('woff2'),
+         url('../font/lato-regular-webfont.woff') format('woff'),
+         url('../font/lato-regular-webfont.ttf') format('truetype'),
+         url('../font/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*------------------- Defaults -----------------*/
+html,body{
+	background-color: #f2f2f2;
+	font-family: "latoregular";
+}
+
+.padding-tb {
+	padding-top: 3%;
+	padding-bottom: 4%;
+}
+
+/*------------------ Header Menu -------------------------*/
+#nav-wrap{
+	background-color: #2d303a;
+}
+
+.default {
+	/*height: 72px;*/
+	/*width: 100%;*/
+}
+
+#main-nav {
+	margin-top: 0; margin-bottom: 0;
+	/*background-color: grey;*/
+	padding-top: 2.0%;
+	border-radius: 0;
+}
+#nav-wrap article {
+	/*background-color: green;*/
+	font-family: "latobold";
+}
+
+#logo a {
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-shadow: none;
+	-webkit-text-shadow: none;
+
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#logo a span{color: #B7C11E;}
+
+#menu { padding-right: 2.0%; }
+
+#menu a {
+	color: #fff;
+	text-transform: uppercase;
+
+	-webkit-text-shadow: none;
+	text-shadow: none;
+
+	padding-top: 0;
+	padding-bottom: 0;
+
+	font-size: 12px;
+}
+#menu li.active a { color: #B7C11E; }
+#menu a:hover, #menu a:focus{
+	background-color: transparent;
+	color: #B7C11E;
+}
+/*#menu ul li a:before{
+	content: ".";
+	font-weight: bold;
+	text-align: center;
+	padding: auto 20px;
+}*/
+#menu ul li {
+	border-right-width: 1px;
+	border-right-color: #666D89;
+	border-right-style: dotted;
+}
+#menu ul li:last-child {
+	border:none;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 1);
+
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+          	box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+	
+}
+.fixed #menu a, .fixed #logo a{
+	color: #2d303a;
+}
+.fixed #menu a:hover {
+	color: #B7C11E;
+}
+
+/*------------------ Slider -------------------------*/
+#slider-wrap {
+	background-color: #f06c64;
+}
+.carousel-inner > .item > img {
+	margin: auto;
+	width: 50%;
+	height: 70%;
+}
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+	background-repeat: no-repeat;
+}
+.carousel-control {
+	opacity: .2;
+}
+.carousel-inner div.item {
+	padding-top: 3%;
+	padding-bottom: 4%;
+}
+
+#slider-wrap article {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/*------------------ Services -------------------------*/
+h1 + p, h1 {
+	margin-bottom: 2%;
+}
+
+#services-wrap section {
+	/*background-color: grey;*/
+}
+#services-wrap section div span:before{
+	margin: 0;
+	font-size: 30px;
+}
+#services-wrap section div:hover { border-color: #B7C11E;}
+#services-wrap section div:hover > span:before {
+	color: #B7C11E;
+}
+
+.circle {
+	border-width: 2px;
+	border-color: #7C829A;
+	border-style: solid;
+	border-radius: 100%;
+}
+
+#services-wrap h1,
+.s-details h3,
+#portfolio-wrap h1,
+#about-wrap h1,
+#about-wrap section h3,
+#contact-wrap h1,
+#contact-info h3,
+#contact-wrap button { 
+	text-transform: capitalize;
+	font-weight: bold;
+	font-family: "latoblack";
+}
+#services-wrap article { color: #666d89; }
+#services-wrap article h1 + p,
+#portfolio-wrap article h1 + p,
+#about-wrap article h1 + p,
+#contact-wrap article h1 + p{
+	font-family: "latolight";
+	font-size: 18px;
+}
+
+.s-details {
+	/*background-color: red;*/
+}
+.s-icon {
+	/*background-color: green;*/
+	position: relative;
+	width: 64px;height: 64px;
+
+	margin-top: 6%;
+}
+.s-icon span{
+	position: absolute;
+	top: 9px;
+}
+
+.s-details ul li {
+	display: block;
+	padding: 0;
+}
+.s-details ul {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.top-margin {
+	margin-top: 2%;
+}
+
+/*------------------ Portfolio -------------------------*/
+#portfolio-wrap {
+	background-color: #2d303a;
+}
+#portfolio-wrap article { color: #5c637c; }
+
+#cat-btn a{
+	background-image: none;
+	background-color: transparent;
+	text-shadow: none;
+	background: no-repeat;
+	color: #5c637c;
+
+	border-color: #5c637c;
+	border-width: 1px;
+	border-radius: 6px;
+
+	text-transform: capitalize;
+
+	box-shadow: none;
+
+	margin-right: 0.5%;
+}
+#cat-btn a:hover{
+	border-color: #fff;
+	color: #fff;
+}
+
+#cat-btn .cat-active {
+	border-color: #fff;
+	color: #fff;
+}
+
+.th-mt {
+	margin-top: 2.5%;
+}
+.th-mt a > img{
+	opacity: 1;
+
+}
+.th-mt a:hover > img {
+	opacity: .3;
+}
+
+
+
+/*------------------ About us -------------------------*/
+#about-wrap section img {
+	margin-top: 6%;
+}
+
+#about-wrap section div{
+	width: 40px; height: 40px;
+	position: relative;
+	display: inline-block;
+	margin-right: 1%;
+	margin-top: 6%;
+
+	border-width: 1px;
+
+	-webkit-transition: border-color ease-in-out .15s, background-color ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, background-color ease-in-out .15s;
+          transition: border-color ease-in-out .15s, background-color ease-in-out .15s;
+}
+#about-wrap section div:last-child{margin-right: 0;}
+
+#about-wrap section div a {
+	position: absolute;
+	top: 5px;
+	left: 9px;
+
+	color: #7C829A;
+
+	-webkit-transition: color ease-in-out .15s;
+       -o-transition: color ease-in-out .15s;
+          transition: color ease-in-out .15s;
+}
+#about-wrap section div a:hover {
+	text-decoration: none;
+}
+
+#about-wrap section div.fb-color:hover > a,
+#about-wrap section div.twit-color:hover > a,
+#about-wrap section div.g-plus-color:hover > a,
+#about-wrap section div.in-color:hover > a {
+	color: #fff;
+}
+
+#about-wrap section div:hover {
+	background-color: #B7C11E;
+	border-color: #B7C11E;
+}
+#about-wrap section div:hover > a {
+	color: #fff;
+}
+
+#about-wrap article { color: #666d89; }
+
+/*------------------ Contact -------------------------*/
+#contact-wrap {
+	background-color: #B7C11E;
+}
+#contact-wrap { color: #fff;}
+
+#contact-wrap input, #contact-wrap textarea{
+	border-color:transparent;
+	background-color: #8A9118;
+
+	-webkit-box-shadow: none;
+          box-shadow: none;
+
+    color: #fff;	
+}
+
+#contact-wrap input:focus, #contact-wrap textarea:focus{
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 9px rgba(255, 255, 255, .7);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 9px rgba(255, 255, 255, .7);
+	border-color: rgba(231,237,142,1.00);
+}
+
+#contact-wrap input::-webkit-input-placeholder, #contact-wrap textarea::-webkit-input-placeholder { color: #fff;opacity: .4;}
+#contact-wrap input::-moz-input-placeholder, #contact-wrap textarea::-moz-input-placeholder { color: #fff;opacity: .4;}/* Firefox 19+ */
+#contact-wrap input:-ms-input-placeholder, #contact-wrap textarea:-ms-input-placeholder { color: #fff;opacity: .4;}
+#contact-wrap input:-moz-input-placeholder, #contact-wrap textarea:-moz-input-placeholder { color: #fff;opacity: .4;}/* Firefox 18- */
+
+#form {
+	margin-top: 2%;
+}
+
+#form button {
+	border: 2px solid #2d303a;
+	background-color: #2d303a;
+
+	-webkit-transition: border-color ease-in-out .15s, background-color ease-in-out .15s, color ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, background-color ease-in-out .15s, color ease-in-out .15s;
+          transition: border-color ease-in-out .15s, background-color ease-in-out .15s, color ease-in-out .15s;
+}
+#form button:hover {
+	color: #2d303a;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+#contact-info p {
+	margin-top: 6%;
+}
+
+address {
+	margin-top: 6%;
+  	padding: 3% 0;
+}
+address i[class*="flaticon"]:before {
+	font-size: 14px;
+	padding-right: 4%;
+}
+address i {
+	font-style: normal;
+	padding-bottom: 1%;
+}
+address span {
+	display: block;
+	padding-bottom: 2%;
+}
+
+/*------------------ Footer -------------------------*/
+footer {
+	background-color: #2d303a;
+	color: #666d89;
+	padding: 1% 0 1% 0;
+}
+
+#social {
+	text-align: right;
+}
+
+#social div {
+	position: relative;
+
+	width: 40px;
+	height: 40px;
+	border-width: 1px;
+
+	display: inline-block;
+	margin-left: 1%;
+
+	-webkit-transition: border-color ease-in-out .15s, background-color ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, background-color ease-in-out .15s;
+          transition: border-color ease-in-out .15s, background-color ease-in-out .15s;
+}
+#social div:first-child{margin-left: 0;}
+
+#social div a {
+	position: absolute;
+	top: 5px;
+	left: 9px;
+	color: #7C829A;
+
+	-webkit-transition: color ease-in-out .15s;
+       -o-transition: color ease-in-out .15s;
+          transition: color ease-in-out .15s;
+}
+#social div a:hover {
+	text-decoration: none;
+}
+#social div:hover {
+	background-color: #B7C11E;
+	border-color: #B7C11E;
+}
+#social div:hover > a {
+	color: #fff;
+}
+
+/*.fb-color:hover{background-color: #3b5998; border-color: #3b5998;}
+.twit-color:hover{background-color: #00aced; border-color: #00aced;}
+.g-plus-color:hover{background-color: #dd4b39; border-color: #dd4b39;}
+.in-color:hover{background-color: #007bb6; border-color: #007bb6;}
+
+#social div.fb-color:hover > a,
+#social div.twit-color:hover > a,
+#social div.g-plus-color:hover > a,
+#social div.in-color:hover > a {
+	color: #fff;
+}*/
+
+#copyright {
+	padding-top: 1.3%;
+}
+
+
+
+@media screen and (max-width:767px){
+	#menu ul li {
+		border-right: none;
+		background: #6C738B;
+		margin: 2px 0;
+	}
+}
