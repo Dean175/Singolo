@@ -1,0 +1,2 @@
+# Singolo
+Singolo HTML template
